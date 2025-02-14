@@ -12,8 +12,9 @@ async function connectDB() {
   }
 }
 
-// Call the function to check the connection when the app starts
-connectDB();
 
-module.exports = prisma;
+module.exports = {
+  prisma,
+  connectDB,
+};
 
